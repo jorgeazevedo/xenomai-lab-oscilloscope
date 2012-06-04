@@ -79,7 +79,7 @@ Plot::Plot(QWidget *parent):
 
     plotLayout()->setAlignCanvasToScales(true);
 
-    setAxisTitle(QwtPlot::yLeft, "Amplitude [numbaros]");
+    setAxisTitle(QwtPlot::yLeft, "Amplitude []");
 
     setAxisTitle(QwtPlot::xBottom, "Time [s]");
     setAxisScale(QwtPlot::xBottom, d_interval.minValue(), d_interval.maxValue()); 
