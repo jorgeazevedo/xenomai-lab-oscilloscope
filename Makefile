@@ -5,7 +5,10 @@ EXECUTABLE=oscilloscope
 
 BLOCK_PROJECT_FOLDER=src/
 
-all:
+all : oscilloscope 
+.PHONY : all
+     
+oscilloscope :
 	cd $(BLOCK_PROJECT_FOLDER); qmake && make;
 
 clean::
