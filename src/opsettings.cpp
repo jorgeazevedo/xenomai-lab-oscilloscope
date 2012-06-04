@@ -7,7 +7,7 @@ OpSettings::OpSettings(QObject *parent) :
     horPos(0)
 {
     //This should be load from preferences file
-    trigger=true;
+    trigger=false;
     triggerSource=0;
     ch1Coupling=DC;
     channelNum=0;

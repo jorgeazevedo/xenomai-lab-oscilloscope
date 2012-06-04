@@ -102,7 +102,7 @@ MainWindow::MainWindow(QWidget *parent):
     d_operation = new QComboBox(this);
     d_operation->insertItem(0,"Continuous");
     d_operation->insertItem(1,"Triggered");
-    d_operation->setCurrentIndex(1);
+    d_operation->setCurrentIndex(0);
 
     d_status = new QPushButton(this);
     d_status->setText("Off");
