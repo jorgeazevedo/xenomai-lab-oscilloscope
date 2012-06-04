@@ -28,14 +28,14 @@ static char args_doc[] = "CONFIG_FILE";
 /* The options we understand. */
 static struct argp_option options[] = {
         {"input",   'i', "INPUTS", 0,
-        "Comma separated list of input queues" },
+        "Comma separated list of input queues", 0 },
         {"output",   'o', "OUTPUTS", 0,
-        "Comma separated list of output queues" },
+        "Comma separated list of output queues", 0 },
         {"input-pipes",   'u', "INPUTPIPES", 0,
-        "Comma separated list of non real-time input pipes" },
+        "Comma separated list of non real-time input pipes", 0 },
         {"output-pipes",   'p', "OUTPUTPIPES", 0,
-        "Comma separated list of non real-time output pipes" },
-        { 0 }
+        "Comma separated list of non real-time output pipes", 0 },
+        { 0,0,0,0,0,0 }
 };
 
 /* Used by main to communicate with parse_opt. */
@@ -94,7 +94,7 @@ struct arguments *arguments = (struct arguments *)state->input;
 }
 
 /* Our argp parser. */
-static struct argp argp = { options, parse_opt, args_doc, doc };
+static struct argp argp = { options, parse_opt, args_doc, doc, 0, 0, 0 };
 
 void* safe_malloc(int bytes){
         void* mem_add;
