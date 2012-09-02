@@ -6,14 +6,14 @@ An oscilloscope for Xenomai Lab. This will be merged into the main rep someday.
 Installation
 ------------
 
-The source code must be put in ~/.xenomailab/blocks/oscilloscope
+The source code must be put in `~/.xenomailab/blocks/oscilloscope`
 
     $ cd ~/.xenomailab/blocks/
     $ mkdir oscilloscope
     $ cd oscilloscope
     $ git clone git://github.com/jorgeazevedo/xenomai-lab-oscilloscope.git .
 
-and an entry should be added to ~/.xenomailab/blocks/blocks.conf
+and an entry should be added to `~/.xenomailab/blocks/blocks.conf`
 
     $ [Non Real-Time]
     $ oscilloscope=square
