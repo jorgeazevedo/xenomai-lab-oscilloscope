@@ -7,7 +7,8 @@ Installation
 ------------
 
 These files should be moved to ~/.xenomailab/blocks/oscilloscope and
-   [Non Real-Time]
-   oscilloscope=square
+
+    [Non Real-Time]
+    oscilloscope=square
 
 added to ~/.xenomailab/blocks/blocks.conf
